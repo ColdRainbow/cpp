@@ -17,7 +17,7 @@ int main(int argc, char **argv)
     while (i < argc)
     {
         std::string s(argv[i]);
-        for (int j = 0; j < s.size(); j++)
+        for (size_t j = 0; j < s.size(); j++)
             std::cout << (char)std::toupper(s[j]);
         std::cout << ' ';
         i++;
