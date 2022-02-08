@@ -9,6 +9,6 @@ int main()
 	horde[1].announce();
 	horde[2].announce();
 	delete[] horde;
-	return 0;
+	return (0);
 }
 

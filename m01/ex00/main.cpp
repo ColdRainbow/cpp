@@ -5,5 +5,9 @@ int main()
 	std::string name("pepa");
 	Zombie z(name);
 	z.announce();
-	return 0;
+	Zombie *zombieee = newZombie("Aeclipsa");
+	zombieee->announce();
+	randomChump("jkek");
+	delete zombieee;
+	return (0);
 }
