@@ -3,7 +3,8 @@ NAME = losers
 CC = c++
 CCFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp \
+		Sed.cpp
 
 OBJ = $(SRC:%.cpp=%.o)
 
@@ -15,7 +16,7 @@ $(NAME): $(OBJ)
 	@echo "${NAME} compiled"
 	@echo "--------------------------------"
 
-%.o: %.cpp
+%.o: %.cpp $(H)
 	$(CC) ${CCFLAGS} -o $@ -c $<
 
 clean:
